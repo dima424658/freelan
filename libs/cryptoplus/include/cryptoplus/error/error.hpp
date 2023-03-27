@@ -177,13 +177,6 @@ namespace cryptoplus
 		int get_library_error(error_type err);
 
 		/**
-		 * \brief Get the function component of the specified error code.
-		 * \param err The error code.
-		 * \return The function component.
-		 */
-		int get_function_error(error_type err);
-
-		/**
 		 * \brief Get the reasib component of the specified error code.
 		 * \param err The error code.
 		 * \return The reason component.
@@ -237,10 +230,6 @@ namespace cryptoplus
 		inline int get_library_error(error_type err)
 		{
 			return ERR_GET_LIB(err.error_code);
-		}
-		inline int get_function_error(error_type err)
-		{
-			return ERR_GET_FUNC(err.error_code);
 		}
 		inline int get_reason_error(error_type err)
 		{

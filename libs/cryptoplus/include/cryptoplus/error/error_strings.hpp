@@ -90,12 +90,6 @@ namespace cryptoplus
 		std::string get_library_error_string(error_type err);
 
 		/**
-		 * \brief Get the function error string associated with a specified error.
-		 * \param err The error.
-		 */
-		std::string get_function_error_string(error_type err);
-
-		/**
 		 * \brief Get the reason error string associated with a specified error.
 		 * \param err The error.
 		 */
@@ -120,10 +114,6 @@ namespace cryptoplus
 		inline std::string get_library_error_string(error_type err)
 		{
 			return ERR_lib_error_string(err.error_code);
-		}
-		inline std::string get_function_error_string(error_type err)
-		{
-			return ERR_func_error_string(err.error_code);
 		}
 		inline std::string get_reason_error_string(error_type err)
 		{
